@@ -1,0 +1,100 @@
+/* 品牌专区开始 */
+.brand{
+	padding:0 10px;
+}
+
+.brand .title{
+	width:100%;
+	vertical-align:top;
+}
+
+.brand .list{
+	padding:10px 0;
+}
+
+.brand .list li{
+	width:25%;
+	float:left;
+}
+
+.brand .list a{
+	display:block;
+}
+
+.brand .list img{
+	width:100%;
+}
+/* 品牌专区结束*/
+/* <!-- 导航链接开始 --> */
+.nav-link{
+	padding:10px;
+}
+
+.nav-link a{
+	display:block;
+	width:33.333%;
+	float:left;
+}
+
+.nav-link a img{
+	width:100%;
+	vertical-align:top;
+}
+/* <!-- 导航链接结束 --> */
+/* 运动生活专区开始 */
+.product{
+	padding: 0 10px;
+}
+.product .title{
+	width: 100%;
+	margin: 10px 0;
+}
+.product .list{
+	padding:10px 0;
+}
+.product li{
+	width: 50%;
+	float: left;
+	padding: 5px;
+}
+.product a{
+	display: block;
+	padding: 0 5px;
+	box-shadow: 0 0 5px #ccc;
+	overflow: hidden;
+}
+.product a img{
+	width: 100%;
+}
+.product .name{
+	line-height: 18px;
+	display: block;
+	color: #8f8f94;
+	text-align: center;
+	padding: 6px;
+	height: 44px;
+	overflow: hidden;
+}
+.product p{
+	font-size: 12px;
+	text-align: center;
+}
+.product p span:first-child{
+	color: #f30;
+	margin-right: 2px;
+}
+.product p span:last-child{
+	color: #ccc;
+	text-decoration: line-through;
+	margin-left: 2px;
+}
+.product .buy-now{
+	background: #006699;
+	color: #fff;
+	margin: 0 auto;
+	border:  none;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* 运动生活专区结束 */
