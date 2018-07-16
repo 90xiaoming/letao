@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./assets/mui/css/mui.min.css">
 	<link rel="stylesheet" href="./assets/mui/css/iconfont.css">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="./css/search.css">
     <script src="./assets/mui/js/mui.min.js"></script>
     <script src="./assets/zepto/zepto.min.js"></script>
     <script src="./assets/artTemplate/template-native.js"></script>
-    <script src="./js/category.js"></script>
+    <script src="./js/search.js"></script>
 </head>
 <body>
     <header class="mui-bar mui-bar-nav header">
-		<h1 class="mui-title">乐淘云购</h1>
+		<h1 class="mui-title">搜索中心</h1>
 		<a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
 	</header>
 	<nav class="mui-bar mui-bar-tab footer">
@@ -36,45 +36,32 @@
 			<span class="mui-icon mui-icon-person"></span>
 			<span class="mui-tab-label">会员中心</span>
 		</a>
-    </nav>
-    <div class="my-content">
-        <div class="ct-left">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <ul class="links">
-                     
-                       
-                    </ul>
-                </div>
-            </div>
-               
-        </div>
-        <div class="ct-right" id="rightCate">
-            <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    
-                 
-                </div>
-            </div>
-        </div>
-    </div>
+    </nav> 
+   <div class="mui-scroll-wrapper">
+		<div class="mui-scroll">
+			<div class="container">
+				<div class="search">
+					<input type="text" placeholder="搜索您喜欢的商品" id="keyword">
+					<input type="button" value="搜索" id="searchBtn">
+				</div>
+				<h5 class="title" id="clearHistory">
+					搜索历史
+					<span class="mui-icon mui-icon-trash fa fa-trash mui-pull-right">&nbsp;清空历史</span>
+				</h5>
+                <ul class="mui-table-view" id="historySearch">
 
-<!-- 分类左边模板 -->
-    <script id="category-first" type="text/template">
-    <% for(var i=0;i<result.length;i++){%>
-    <li>
-        <a href="#" data-id="<%=result[i].id %>" class="getSecond"><%=result[i].categoryName%></a>
-    </li>
-    <%}%>
-    </script>
-<!-- 分类右边模板 -->
-    <script id="category-Second" type="text/template">
-    <% for(var i=0 ;i<data.length;i++){%>
-    <a href="#">
-     <img src="<%=data[i].brandLogo%>" alt="">
-     <p><%=data[i].brandName%></p>
-    </a>
-    <%}%>
-    </script>
+                </ul>
+               
+            </div>
+           
+        </div>
+        
+        
+    </div>
+  <script id="historySearchTpl" type="text/template">
+  <% for(var i=0;i<data.length;i++){ %>
+  <li class="mui-table-view-cell"><%=data[i] %></li>
+  <% } %>
+  </script>
 </body>
 </html>

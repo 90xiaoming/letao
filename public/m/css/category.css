@@ -4,6 +4,7 @@ html,body{
 .my-content{
     width: 100%;
     height: 100%;
+    
 }
 .ct-left{
     background: #cccccc;;
@@ -18,7 +19,9 @@ html,body{
     float: left;
     width: 80%;
     height: 100%;
+    margin-top: 44px;
     position: relative;
+    text-align: center;
     
     /* margin-left: 20%; */
     
